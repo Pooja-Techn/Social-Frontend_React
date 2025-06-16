@@ -24,7 +24,7 @@ export const PostProvider = ({ children }) => {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/posts', {
+      const res = await fetch('https://social-media-backend-yzzw.onrender.com/api/posts', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },

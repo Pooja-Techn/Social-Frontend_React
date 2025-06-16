@@ -8,7 +8,7 @@ function Home() {
     const fetchProtected = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/home', {
+        const res = await axios.get('https://social-media-backend-yzzw.onrender.com/api/home', {
           headers: {
             Authorization: `Bearer ${token}`
           }

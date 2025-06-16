@@ -22,7 +22,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const res = await axios.post('https://social-media-backend-yzzw.onrender.com/api/auth/login', formData);
       toast.success(res.data.message);
 
       // Optional: Store token in localStorage

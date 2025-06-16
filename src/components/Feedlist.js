@@ -14,12 +14,12 @@ const handleLikeToggle = async (postId, likedByCurrentUser) => {
 
     let response;
     if (!likedByCurrentUser) {
-      response = await fetch(`http://localhost:5000/api/like/${postId}`, {
+      response = await fetch(`https://social-media-backend-yzzw.onrender.com/api/like/${postId}`, {
         method: 'POST',
         headers,
       });
     } else {
-      response = await fetch(`http://localhost:5000/api/like/${postId}`, {
+      response = await fetch(`https://social-media-backend-yzzw.onrender.com/api/like/${postId}`, {
         method: 'DELETE',
         headers,
       });
