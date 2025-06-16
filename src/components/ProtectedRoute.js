@@ -19,7 +19,6 @@ function ProtectedRoute({ children }) {
             Authorization: `Bearer ${token}`,
           },
         });
-
         if (res.data.valid) {
           setIsValid(true);
         } else {
