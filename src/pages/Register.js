@@ -20,7 +20,9 @@ function Register() {
     e.preventDefault();
     try {
       const res = await axios.post('https://social-media-backend-yzzw.onrender.com/api/register', formData);
-      toast.success(res.data.message);
+      console.log(res)
+      console.log(res.data)
+      toast.success(res.data);
       setFormData({ name: '', email: '', password: '' });
     } catch (error) {
       const msg =
