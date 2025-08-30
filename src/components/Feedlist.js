@@ -54,7 +54,7 @@ const handleLikeToggle = async (postId, likedByCurrentUser) => {
         posts.map((post) => (
           <div key={post._id} className="card mb-3 shadow-sm">
             <div className="card-body position-relative">
-              <p className="card-text mb-1 fw-semibold">{post.author.email}</p>
+              {/* <p className="card-text mb-1 fw-semibold">{post.author.email}</p> */}
               <p className="card-text">{post.content}</p>
               {post.mediaUrl && (
                 <img
